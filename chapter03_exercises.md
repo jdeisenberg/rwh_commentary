@@ -1,0 +1,1 @@
+Here is a slightly different take on the palindrome exercise. Rather than use the built-in `reverse` function, I used the `init` function, which returns everything except the last item in a list. See `palindrome.hs` in the chapter03_files directory.
