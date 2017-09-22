@@ -24,13 +24,13 @@ data Course = Course {
 -- or a “combo platter”:
 --    BIOL 072 - Prerequisite: BIOL 071 and (CHEM 001A or CHEM 015 or CHEM 030A)
 --       and MATH 013
---    ENGL 084A - Prerequisite: ENGL 092 or (ENGL 102 or READ 101)
+--    ENGL 084A - Prerequisite: ENGL 102 or (ENGL 321 and ENGL 104)
 
 data Prerequisite = 
     Single Course
   | All [Prerequisite]
   | Any [Prerequisite]
-    deriving Show
+    deriving (Show)
 -- and now, some code to see if this makes any damn sense
 
 chem001a = Course "CHEM" "001A" "General Chemistry"
