@@ -4,13 +4,13 @@ Haskell has built-in trigonometric functions `sin`, `cos`, and `tan`, which take
 
 Write these two utility functions:
 
-````
+```
     -- takes an argument in degrees and returns the value in radians
     radians :: Floating a => a -> a
 
     -- takes an argument in radians and returns the value in degrees
     degrees :: Floating a => a -> a
-````
+```
 
 Use those functions to write functions `sinDeg`, `cosDeg`,  and `tanDeg` which take sine, cosine, and tangent of their argument given in degrees.
 
